@@ -19,7 +19,7 @@ export default function Login() {
     setTimeout(() => {
       const ok = login(matricula, senha)
       if (ok) navigate('/')
-      else setErro('Matrícula ou senha inválidos. Tente novamente.')
+      else setErro('Usuário ou senha inválidos. Tente novamente.')
       setLoading(false)
     }, 400)
   }
@@ -41,7 +41,7 @@ export default function Login() {
 
           <form onSubmit={handleSubmit} className="login-form">
             <div className="form-field">
-              <label>Matrícula</label>
+              <label>Usuário</label>
               <input
                 type="text"
                 placeholder="ex: admin"
